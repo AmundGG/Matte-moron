@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Matte Moro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>matte spill</h1>
-    
+
+    <h1>Matte Moro</h1>
+    <h2>Hei! Klar for å spille?</h2>
+
+    <button onclick="start()">Start</button>
+
+    <div id="spill">
+        <h2 id="oppgave"></h2>
+        <p id="epler"></p>
+
+        <button onclick="svar(4)">4</button>
+        <button onclick="svar(5)">5</button>
+        <button onclick="svar(6)">6</button>
+
+        <h3 id="melding"></h3>
+        <p id="poeng">Poeng: 0</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+

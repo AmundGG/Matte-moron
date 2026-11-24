@@ -1,0 +1,35 @@
+
+body {
+    background-color: #942222;
+    text-align: center;
+}
+
+h1 {
+    color: purple;
+    font-size: 40px;
+}
+
+button {
+    background-color: #0400ff;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 0, 255);
+}
+
+#spill {
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+#oppgave {
+    font-size: 40px;
+}
+
