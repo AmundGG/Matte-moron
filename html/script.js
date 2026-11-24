@@ -22,7 +22,7 @@ function nyOppgave() {
     document.getElementById("melding").innerHTML = "";
 }
 
-function svar(tall) {
+function svar(tall) { // denne sjekker om svaralternativet er riktig
     if (tall == riktigSvar) {
         poeng++;
         document.getElementById("melding").innerHTML =
@@ -32,6 +32,6 @@ function svar(tall) {
             "Prøv igjen.";
     }
 
-    document.getElementById("poeng").innerHTML =
+    document.getElementById("poeng").innerHTML = // teller antall poeng
         "Poeng: " + poeng;
 }
