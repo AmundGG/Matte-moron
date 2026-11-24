@@ -22,16 +22,32 @@ function nyOppgave() {
     document.getElementById("melding").innerHTML = "";
 }
 
-function svar(tall) { // denne sjekker om svaralternativet er riktig
+function svar(tall) {  // denne sjekker om svaralternativet er riktig
     if (tall == riktigSvar) {
         poeng++;
+
         document.getElementById("melding").innerHTML =
-            "Riktig!";
+            "Riktig! Bra jobbet!";
+
+        document.getElementById("riktigLyd").play();
+
     } else {
         document.getElementById("melding").innerHTML =
-            "Prøv igjen.";
+            "Prøv igjen!";
+
+        document.getElementById("feilLyd").play();
     }
 
-    document.getElementById("poeng").innerHTML = // teller antall poeng
+    document.getElementById("poeng").innerHTML =
         "Poeng: " + poeng;
+} 
+
+     // teller antall poeng
+
+function start() {
+    document.getElementById("spill").style.display = "block";
+
+    document.getElementById("backgroundMusic").play();
+
+    nyOppgave();
 }
