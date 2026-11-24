@@ -1,6 +1,6 @@
 
 body {
-    background-color: #942222;
+    background-color: #fabae8;
     text-align: center;
 }
 
@@ -33,3 +33,31 @@ button:hover {
     font-size: 40px;
 }
 
+.startside {
+    padding-top: 100px;
+}
+
+.startside h1 {
+    font-size: 60px;
+}
+
+.startside p {
+    color: white;
+    font-size: 24px;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.startside {
+    background-image: url("StartBakgrunn.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
